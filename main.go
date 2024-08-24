@@ -1,33 +1,17 @@
 package main
 
 import (
+	"context"
 	"fmt"
-	"net/http"
+
+	"github.com/caiotheodoro/go/application"
 )
 
 func main() {
-	server := &http.Server{
-		Addr:    ":3000",
-		Handler: http.HandlerFunc(handler),
-	}
+	app := application.New()
+	err := app.Start(context.TODO())
 
-	if err := server.ListenAndServe(); err != nil {
-		fmt.Println("Server error: ", err)
+	if err != nil {
+		fmt.Println(err)
 	}
-}
-
-func handler(w http.ResponseWriter, r *http.Request) {
-	if r.Method == http.MethodGet {
-		if r.URL.Path == "/hello" {
-			w.Write([]byte("Hello, World!"))
-			return
-		}
-	}
-
-	if r.Method == http.MethodPost {
-		w.Write([]byte("Hello, World!"))
-		return
-	}
-
-	w.Write([]byte("Hello, World!"))
 }
