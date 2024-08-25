@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/samverrall/microservice-example/internal/app"
+	"github.com/caiotheodoro/go/auth-grpc-microservice/internal/app"
 )
 
 func (s *Service) CreateAccount(ctx context.Context, email, password string) (*Account, error) {

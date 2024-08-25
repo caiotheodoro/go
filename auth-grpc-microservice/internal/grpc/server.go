@@ -5,7 +5,7 @@ import (
 	"log/slog"
 	"net"
 
-	"github.com/samverrall/microservice-example/internal/grpc/handler"
+	"github.com/caiotheodoro/go/auth-grpc-microservice/internal/grpc/handler"
 	"google.golang.org/grpc"
 )
 

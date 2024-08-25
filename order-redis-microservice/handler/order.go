@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/caiotheodoro/go/model"
-	"github.com/caiotheodoro/go/repository/order"
+	"github.com/caiotheodoro/go/order-redis-microservice/model"
+	"github.com/caiotheodoro/go/order-redis-microservice/repository/order"
 	"github.com/go-chi/chi/v5"
 	"github.com/google/uuid"
 )

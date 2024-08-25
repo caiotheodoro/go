@@ -3,7 +3,7 @@ package postgres
 import (
 	"context"
 
-	"github.com/samverrall/microservice-example/internal/app/user"
+	"github.com/caiotheodoro/go/auth-grpc-microservice/internal/app/user"
 )
 
 type UserRepository struct {

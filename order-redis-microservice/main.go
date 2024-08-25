@@ -6,7 +6,7 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/caiotheodoro/go/application"
+	"github.com/caiotheodoro/go/order-redis-microservice/application"
 )
 
 func main() {

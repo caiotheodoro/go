@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/caiotheodoro/go/model"
+	"github.com/caiotheodoro/go/order-redis-microservice/model"
 	"github.com/redis/go-redis/v9"
 )
 

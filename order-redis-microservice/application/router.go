@@ -3,8 +3,8 @@ package application
 import (
 	"net/http"
 
-	"github.com/caiotheodoro/go/handler"
-	"github.com/caiotheodoro/go/repository/order"
+	"github.com/caiotheodoro/go/order-redis-microservice/handler"
+	"github.com/caiotheodoro/go/order-redis-microservice/repository/order"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 )

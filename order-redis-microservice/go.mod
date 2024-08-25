@@ -1,4 +1,4 @@
-module github.com/caiotheodoro/go
+module github.com/caiotheodoro/go/order-redis-microservice
 
 go 1.23.0
 

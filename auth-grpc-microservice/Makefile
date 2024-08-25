@@ -10,7 +10,7 @@ run:
 
 .PHONY: build
 build: lint
-	go build -o $(OUTPUT) github.com/samverrall/microservice-example/cmd
+	go build -o $(OUTPUT) github.com/caiotheodoro/go/auth-grpc-microservice/cmd
 
 .PHONY: test
 test:

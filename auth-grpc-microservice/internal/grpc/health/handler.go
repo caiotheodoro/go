@@ -3,7 +3,7 @@ package health
 import (
 	"context"
 
-	"github.com/samverrall/microservice-example/pkg/proto"
+	"github.com/caiotheodoro/go/auth-grpc-microservice/pkg/proto"
 )
 
 type Handler struct {

@@ -4,8 +4,8 @@ import (
 	"context"
 	"log/slog"
 
-	"github.com/samverrall/microservice-example/internal/grpc/handler"
-	"github.com/samverrall/microservice-example/pkg/proto"
+	"github.com/caiotheodoro/go/auth-grpc-microservice/internal/grpc/handler"
+	"github.com/caiotheodoro/go/auth-grpc-microservice/pkg/proto"
 )
 
 type Handler struct {

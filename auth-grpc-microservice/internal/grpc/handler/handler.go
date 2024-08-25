@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/samverrall/microservice-example/internal/app"
-	"github.com/samverrall/microservice-example/internal/app/user"
-	"github.com/samverrall/microservice-example/internal/repository"
+	"github.com/caiotheodoro/go/auth-grpc-microservice/internal/app"
+	"github.com/caiotheodoro/go/auth-grpc-microservice/internal/app/user"
+	"github.com/caiotheodoro/go/auth-grpc-microservice/internal/repository"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

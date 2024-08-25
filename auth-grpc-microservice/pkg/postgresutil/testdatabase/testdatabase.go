@@ -7,9 +7,9 @@ import (
 	"log"
 	"time"
 
+	"github.com/caiotheodoro/go/auth-grpc-microservice/pkg/postgresutil"
 	"github.com/google/uuid"
 	"github.com/jackc/pgx/v5/pgxpool"
-	"github.com/samverrall/microservice-example/pkg/postgresutil"
 	"github.com/testcontainers/testcontainers-go"
 	"github.com/testcontainers/testcontainers-go/wait"
 )

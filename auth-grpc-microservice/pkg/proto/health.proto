@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/samverrall/microservice-example/pkg/proto";
+option go_package = "github.com/caiotheodoro/go/auth-grpc-microservice/pkg/proto";
 
 package grpc.health.v1;
 

@@ -9,14 +9,14 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/samverrall/microservice-example/internal/app/user"
-	"github.com/samverrall/microservice-example/internal/grpc"
-	"github.com/samverrall/microservice-example/internal/grpc/handler"
-	"github.com/samverrall/microservice-example/internal/grpc/health"
-	userhandler "github.com/samverrall/microservice-example/internal/grpc/user"
-	"github.com/samverrall/microservice-example/internal/postgres"
-	"github.com/samverrall/microservice-example/pkg/config"
-	"github.com/samverrall/microservice-example/pkg/proto"
+	"github.com/caiotheodoro/go/auth-grpc-microservice/internal/app/user"
+	"github.com/caiotheodoro/go/auth-grpc-microservice/internal/grpc"
+	"github.com/caiotheodoro/go/auth-grpc-microservice/internal/grpc/handler"
+	"github.com/caiotheodoro/go/auth-grpc-microservice/internal/grpc/health"
+	userhandler "github.com/caiotheodoro/go/auth-grpc-microservice/internal/grpc/user"
+	"github.com/caiotheodoro/go/auth-grpc-microservice/internal/postgres"
+	"github.com/caiotheodoro/go/auth-grpc-microservice/pkg/config"
+	"github.com/caiotheodoro/go/auth-grpc-microservice/pkg/proto"
 	"google.golang.org/grpc/reflection"
 )
 

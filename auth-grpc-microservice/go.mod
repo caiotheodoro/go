@@ -1,4 +1,4 @@
-module github.com/samverrall/microservice-example
+module github.com/caiotheodoro/go/auth-grpc-microservice
 
 go 1.21.0
 
