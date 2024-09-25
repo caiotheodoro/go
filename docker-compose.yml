@@ -1,0 +1,60 @@
+version: "3.8"
+
+services:
+  auth-grpc:
+    build:
+      context: ./auth-grpc-microservice
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - SERVER_PORT=8000
+      - DATABASE_SECRET=replace_with_actual_secret
+    networks:
+      - microservices-network
+
+  order-redis:
+    build:
+      context: ./order-redis-microservice
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      - SERVER_PORT=8081
+      - REDIS_ADDRESS=redis:6379
+    depends_on:
+      - redis
+    networks:
+      - microservices-network
+
+  product-service:
+    build:
+      context: ./product-service
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
+    environment:
+      - SERVER_PORT=8082
+      - AUTH_GRPC_ADDRESS=auth-grpc:8000
+      - ORDER_SERVICE_ADDRESS=http://order-redis:8081
+    depends_on:
+      - auth-grpc
+      - order-redis
+    networks:
+      - microservices-network
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - microservices-network
+
+networks:
+  microservices-network:
+    name: microservices-network
+
+volumes:
+  redis-data:
