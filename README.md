@@ -33,7 +33,7 @@ This project demonstrates a microservices architecture using Go, gRPC, Redis, an
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/microservices-project.git
+   git clone https://github.com/caiotheodoro/microservices-project.git
    cd microservices-project
    ```
 
