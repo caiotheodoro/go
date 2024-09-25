@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/yourusername/product-service/internal/config"
-	"github.com/yourusername/product-service/internal/handler"
+	"github.com/caiotheodoro/product-service/internal/config"
+	"github.com/caiotheodoro/product-service/internal/handler"
 )
 
 type App struct {

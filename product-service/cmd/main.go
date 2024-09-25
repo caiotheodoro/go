@@ -6,8 +6,8 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/yourusername/product-service/internal/app"
-	"github.com/yourusername/product-service/internal/config"
+	"github.com/caiotheodoro/product-service/internal/app"
+	"github.com/caiotheodoro/product-service/internal/config"
 )
 
 func main() {

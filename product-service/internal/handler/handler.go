@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/yourusername/product-service/internal/config"
+	"github.com/caiotheodoro/product-service/internal/config"
 	"google.golang.org/grpc"
-	"github.com/yourusername/auth-grpc-microservice/pkg/proto"
+	"github.com/caiotheodoro/auth-grpc-microservice/pkg/proto"
 )
 
 type Handler struct {
